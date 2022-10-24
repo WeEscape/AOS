@@ -4,6 +4,7 @@ module.exports = ({ config }) => {
     console.log('APP_ENV1', process.env.APP_ENV);
     return {
       ...config,
+
       extra: {
         apiUrl: process.env.API_URL,
         eas: {
@@ -24,8 +25,8 @@ module.exports = ({ config }) => {
       },
     };
   } else {
-    console.log('config3', config);
-    console.log('APP_ENV3', process.env.APP_ENV);
+    // console.log('config3', config);
+    // console.log('APP_ENV3', process.env.APP_ENV);
     return {
       ...config,
     };
